@@ -1,6 +1,7 @@
 import { Button } from '@/components/Button'
-import { DownloadCVButton } from '@/components/DownloadCVButton';
-import { ArrowRight, Github, Linkedin } from 'lucide-react';
+import { TransparentButton } from '../components/TransparentButton';
+import { ArrowRight, Github, Linkedin, Download } from 'lucide-react';
+
 
 const skills = [
     "Linux",
@@ -83,7 +84,9 @@ export const Hero = () => {
                         <Button size="lg">
                             Contact Me <ArrowRight className="w-5 h-5"/>
                         </Button>
-                        <DownloadCVButton />
+                        <TransparentButton>
+                            <Download className="w-5 h-5"/>Download CV
+                        </TransparentButton>
                     </div>
 
                     {/* Social Links */}

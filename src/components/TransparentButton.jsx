@@ -1,6 +1,6 @@
 import { Download } from "lucide-react";
 
-export const DownloadCVButton = () => {
+export const TransparentButton = ({ children }) => {
     return (
         <button
             className="relative bh-transparent border border-border
@@ -11,7 +11,8 @@ export const DownloadCVButton = () => {
                 px-8 py-4 text-lg font-medium rounded-full overflow-visible"
         >
             <span className="relative z-10 flex items-center justify-center gap-2">
-                <Download className="w-5 h-5"/>Download CV
+                
+                {children}
             </span>
         </button>
     );
