@@ -45,15 +45,15 @@ export const Projects = () => {
             <div className="container mx-auto px-6 relative z-10">
                 {/* Section Header */}
                 <div className="text-center mx-auto max-w-3xl mb-16">
-                    <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animation-fade-in">Featured Works</span>
-                    <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animation-fade-in animation-delay-100 text-secondary-foreground">
+                    <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">Featured Works</span>
+                    <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
                         Projects that
                         <span className="font-serif italic font-normal text-white">
                              {" "}
                              make an impact.
                         </span>
                     </h2>
-                    <p className="text-muted-foreground animation-fade-in animation-delay-200">
+                    <p className="text-muted-foreground animate-fade-in animation-delay-200">
                         A selection of my recent work, from x to y that solve real-world problems.
                     </p>
                 </div>
@@ -63,7 +63,7 @@ export const Projects = () => {
                     {projects.map((project, idx) => (
                         <div 
                             key={idx} 
-                            className="group glass rounded-2xl overflow-hidden animation-fade-in md:row-span-1"
+                            className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1"
                             style={{animationDelay: `${(idx + 1) * 100}ms`}}
                             >
                             {/* Image */}
@@ -111,7 +111,7 @@ export const Projects = () => {
                 </div>
 
                 {/* View All CTA */}
-                <div className="text-center mt-12 animation-fade-in animatin-delay-500">
+                <div className="text-center mt-12 animate-fade-in animatin-delay-500">
                     <TransparentButton>
                         View All Projects
                         <ArrowUpRight className="w-5 h-5"/>
